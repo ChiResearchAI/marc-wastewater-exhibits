@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChiResearch — MARC Wastewater Exhibits</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --panel:#fff; --ink:#15171a; --ink-2:#4a5059; --ink-3:#767d87;
+    --line:#e4e2dd; --line-strong:#c9c6bf; --accent:#1f4e79;
+  }
+  :root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
+    --bg:#15171a; --panel:#1d2024; --ink:#f2f1ee; --ink-2:#b4b9c0; --ink-3:#878d96;
+    --line:#2b2f35; --line-strong:#3c424a; --accent:#7fb0e0;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#15171a; --panel:#1d2024; --ink:#f2f1ee; --ink-2:#b4b9c0; --ink-3:#878d96;
+    --line:#2b2f35; --line-strong:#3c424a; --accent:#7fb0e0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:56px 16px 72px}
+  .eyebrow{font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+  h1{font-size:clamp(26px,4.6vw,38px);line-height:1.18;margin:0 0 14px;letter-spacing:-.015em}
+  .lede{font-size:17px;color:var(--ink-2);margin:0 0 8px;max-width:64ch}
+  .note{font-size:13.5px;color:var(--ink-3);margin:18px 0 0;max-width:72ch;
+    border-left:2px solid var(--line-strong);padding-left:14px}
+  .cards{display:grid;gap:18px;margin:38px 0 0}
+  @media(min-width:720px){.cards{grid-template-columns:1fr 1fr}}
+  .cards>*{min-width:0}
+  a.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:22px 22px 20px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+  a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  a.card h2{font-size:17.5px;margin:0 0 8px;color:var(--accent);letter-spacing:-.01em}
+  a.card p{font-size:14px;color:var(--ink-2);margin:0 0 14px}
+  .stat{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .go{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--accent)}
+  footer{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--ink-3)}
+  footer b{color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">ChiResearch Technologies, LLC</p>
+  <h1>Interactive exhibits — MARC Regional Wastewater Data RFP</h1>
+  <p class="lede">The two interactive work samples accompanying our response to the Mid-America Regional Council's
+  RFP for Regional Wastewater Data Standardization/Normalization and Predictive Analytics Dashboard Development.</p>
+
+  <div class="cards">
+    <a class="card" href="forecast-validation-bench.html">
+      <h2>Forecast Validation Bench</h2>
+      <p>Rolling-origin backtest of four baselines across Kansas and Missouri sewersheds, scored per site — including
+      the sewersheds where nothing beats a flat forecast.</p>
+      <div class="stat">79 sewersheds · 12,593 site-weeks · data through 5 Oct 2026</div>
+      <span class="go">Open the bench →</span>
+    </a>
+    <a class="card" href="sewershed-basis-explorer.html">
+      <h2>Sewershed Basis Explorer</h2>
+      <p>What the choice of normalization basis and indexing window does to the activity level a dashboard would
+      publish, on the region's own data.</p>
+      <div class="stat">Accompanies Attachment 2 — Normalization Note</div>
+      <span class="go">Open the explorer →</span>
+    </a>
+  </div>
+
+  <p class="note">Both exhibits are original applied analysis prepared for this response, computed from CDC's public
+  wastewater release rather than illustrated. Every figure reproduces from the scripts that produced it. The activity
+  bands shown are KDHE's published thresholds applied by ChiResearch to CDC concentration data — categories generated
+  in this analysis, not levels published by any agency.</p>
+
+  <footer>
+    <b>Wilfred C. Ikejiofor</b> — Founder and Principal · wilfred@chiresearchai.com · 410-929-2170
+  </footer>
+</div>
+</body>
+</html>
